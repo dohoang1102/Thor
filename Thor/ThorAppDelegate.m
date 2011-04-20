@@ -8,13 +8,25 @@
 
 #import "ThorAppDelegate.h"
 
-@implementation ThorAppDelegate
+#import "COGoogleRequest.h"
 
+
+@implementation ThorAppDelegate
 @synthesize window;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (NSString *)testQuery0 {
+  return @"i%20am%20number%20four";
+}
+
+- (NSString *)testQuery1 {
+  return @"how%20i%20met%20your%20mother";
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   // Insert code here to initialize your application
+  
+  COGoogleRequest *request = [COGoogleRequest new];
+  [request query:[self testQuery1]];
 }
 
 @end
