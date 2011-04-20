@@ -8,7 +8,7 @@
 
 #import "ThorAppDelegate.h"
 
-#import "COGoogleRequest.h"
+#import "COGoogleQuery.h"
 
 
 @implementation ThorAppDelegate
@@ -24,9 +24,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   // Insert code here to initialize your application
-  
-  COGoogleRequest *request = [COGoogleRequest new];
-  [request query:[self testQuery1]];
+  [[COGoogleQuery new] query:[self testQuery1]];
 }
 
 @end

@@ -1,15 +1,15 @@
 //
-//  COGoogleRequest.m
+//  COGoogleQuery.m
 //  Thor
 //
 //  Created by Erik Aigner on 20.04.11.
 //  Copyright 2011 chocomoko.com. All rights reserved.
 //
 
-#import "COGoogleRequest.h"
+#import "COGoogleQuery.h"
 
 
-@implementation COGoogleRequest
+@implementation COGoogleQuery
 
 - (id)init {
   self = [super init];

@@ -14,7 +14,8 @@
 		DC830805135F4EA200C5A87D /* ThorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC830804135F4EA200C5A87D /* ThorAppDelegate.m */; };
 		DC830808135F4EA200C5A87D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC830806135F4EA200C5A87D /* MainMenu.xib */; };
 		DC83080F135F4F4100C5A87D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC83080E135F4F4100C5A87D /* WebKit.framework */; };
-		DC830812135F4F5C00C5A87D /* COGoogleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC830811135F4F5C00C5A87D /* COGoogleRequest.m */; };
+		DC830812135F4F5C00C5A87D /* COGoogleQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DC830811135F4F5C00C5A87D /* COGoogleQuery.m */; };
+		DC830829135F5D7C00C5A87D /* COGoogleQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC830828135F5D7C00C5A87D /* COGoogleQueryOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,10 @@
 		DC830804135F4EA200C5A87D /* ThorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThorAppDelegate.m; sourceTree = "<group>"; };
 		DC830807135F4EA200C5A87D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DC83080E135F4F4100C5A87D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		DC830810135F4F5C00C5A87D /* COGoogleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COGoogleRequest.h; sourceTree = "<group>"; };
-		DC830811135F4F5C00C5A87D /* COGoogleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COGoogleRequest.m; sourceTree = "<group>"; };
+		DC830810135F4F5C00C5A87D /* COGoogleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; path = COGoogleQuery.h; sourceTree = "<group>"; };
+		DC830811135F4F5C00C5A87D /* COGoogleQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COGoogleQuery.m; sourceTree = "<group>"; };
+		DC830827135F5D7C00C5A87D /* COGoogleQueryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COGoogleQueryOperation.h; sourceTree = "<group>"; };
+		DC830828135F5D7C00C5A87D /* COGoogleQueryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COGoogleQueryOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +94,10 @@
 			children = (
 				DC830803135F4EA200C5A87D /* ThorAppDelegate.h */,
 				DC830804135F4EA200C5A87D /* ThorAppDelegate.m */,
-				DC830810135F4F5C00C5A87D /* COGoogleRequest.h */,
-				DC830811135F4F5C00C5A87D /* COGoogleRequest.m */,
+				DC830810135F4F5C00C5A87D /* COGoogleQuery.h */,
+				DC830811135F4F5C00C5A87D /* COGoogleQuery.m */,
+				DC830827135F5D7C00C5A87D /* COGoogleQueryOperation.h */,
+				DC830828135F5D7C00C5A87D /* COGoogleQueryOperation.m */,
 				DC830806135F4EA200C5A87D /* MainMenu.xib */,
 				DC8307F8135F4EA200C5A87D /* Supporting Files */,
 			);
@@ -176,7 +181,8 @@
 			files = (
 				DC8307FF135F4EA200C5A87D /* main.m in Sources */,
 				DC830805135F4EA200C5A87D /* ThorAppDelegate.m in Sources */,
-				DC830812135F4F5C00C5A87D /* COGoogleRequest.m in Sources */,
+				DC830812135F4F5C00C5A87D /* COGoogleQuery.m in Sources */,
+				DC830829135F5D7C00C5A87D /* COGoogleQueryOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

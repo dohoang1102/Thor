@@ -1,5 +1,5 @@
 //
-//  COGoogleRequest.h
+//  COGoogleQuery.h
 //  Thor
 //
 //  Created by Erik Aigner on 20.04.11.
@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 
 
-@interface COGoogleRequest : NSObject {
+@interface COGoogleQuery : NSObject {
 @private
   WebView *m_webView;
   NSArray *m_blacklist;
