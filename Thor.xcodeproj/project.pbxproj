@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC8307F2135F4EA200C5A87D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8307F1135F4EA200C5A87D /* Cocoa.framework */; };
+		DC8307FC135F4EA200C5A87D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC8307FA135F4EA200C5A87D /* InfoPlist.strings */; };
+		DC8307FF135F4EA200C5A87D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8307FE135F4EA200C5A87D /* main.m */; };
+		DC830802135F4EA200C5A87D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DC830800135F4EA200C5A87D /* Credits.rtf */; };
+		DC830805135F4EA200C5A87D /* ThorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC830804135F4EA200C5A87D /* ThorAppDelegate.m */; };
+		DC830808135F4EA200C5A87D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC830806135F4EA200C5A87D /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC8307ED135F4EA200C5A87D /* Thor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8307F1135F4EA200C5A87D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DC8307F4135F4EA200C5A87D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DC8307F5135F4EA200C5A87D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DC8307F6135F4EA200C5A87D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC8307F9135F4EA200C5A87D /* Thor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Thor-Info.plist"; sourceTree = "<group>"; };
+		DC8307FB135F4EA200C5A87D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC8307FD135F4EA200C5A87D /* Thor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thor-Prefix.pch"; sourceTree = "<group>"; };
+		DC8307FE135F4EA200C5A87D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC830801135F4EA200C5A87D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DC830803135F4EA200C5A87D /* ThorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThorAppDelegate.h; sourceTree = "<group>"; };
+		DC830804135F4EA200C5A87D /* ThorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThorAppDelegate.m; sourceTree = "<group>"; };
+		DC830807135F4EA200C5A87D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC8307EA135F4EA200C5A87D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8307F2135F4EA200C5A87D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC8307E2135F4EA200C5A87D = {
+			isa = PBXGroup;
+			children = (
+				DC8307F7135F4EA200C5A87D /* Thor */,
+				DC8307F0135F4EA200C5A87D /* Frameworks */,
+				DC8307EE135F4EA200C5A87D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC8307EE135F4EA200C5A87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC8307ED135F4EA200C5A87D /* Thor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC8307F0135F4EA200C5A87D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8307F1135F4EA200C5A87D /* Cocoa.framework */,
+				DC8307F3135F4EA200C5A87D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC8307F3135F4EA200C5A87D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8307F4135F4EA200C5A87D /* AppKit.framework */,
+				DC8307F5135F4EA200C5A87D /* CoreData.framework */,
+				DC8307F6135F4EA200C5A87D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DC8307F7135F4EA200C5A87D /* Thor */ = {
+			isa = PBXGroup;
+			children = (
+				DC830803135F4EA200C5A87D /* ThorAppDelegate.h */,
+				DC830804135F4EA200C5A87D /* ThorAppDelegate.m */,
+				DC830806135F4EA200C5A87D /* MainMenu.xib */,
+				DC8307F8135F4EA200C5A87D /* Supporting Files */,
+			);
+			path = Thor;
+			sourceTree = "<group>";
+		};
+		DC8307F8135F4EA200C5A87D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC8307F9135F4EA200C5A87D /* Thor-Info.plist */,
+				DC8307FA135F4EA200C5A87D /* InfoPlist.strings */,
+				DC8307FD135F4EA200C5A87D /* Thor-Prefix.pch */,
+				DC8307FE135F4EA200C5A87D /* main.m */,
+				DC830800135F4EA200C5A87D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC8307EC135F4EA200C5A87D /* Thor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC83080B135F4EA200C5A87D /* Build configuration list for PBXNativeTarget "Thor" */;
+			buildPhases = (
+				DC8307E9135F4EA200C5A87D /* Sources */,
+				DC8307EA135F4EA200C5A87D /* Frameworks */,
+				DC8307EB135F4EA200C5A87D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thor;
+			productName = Thor;
+			productReference = DC8307ED135F4EA200C5A87D /* Thor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC8307E4135F4EA200C5A87D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = chocomoko.com;
+			};
+			buildConfigurationList = DC8307E7135F4EA200C5A87D /* Build configuration list for PBXProject "Thor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC8307E2135F4EA200C5A87D;
+			productRefGroup = DC8307EE135F4EA200C5A87D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC8307EC135F4EA200C5A87D /* Thor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC8307EB135F4EA200C5A87D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8307FC135F4EA200C5A87D /* InfoPlist.strings in Resources */,
+				DC830802135F4EA200C5A87D /* Credits.rtf in Resources */,
+				DC830808135F4EA200C5A87D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC8307E9135F4EA200C5A87D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8307FF135F4EA200C5A87D /* main.m in Sources */,
+				DC830805135F4EA200C5A87D /* ThorAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC8307FA135F4EA200C5A87D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8307FB135F4EA200C5A87D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC830800135F4EA200C5A87D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC830801135F4EA200C5A87D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DC830806135F4EA200C5A87D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC830807135F4EA200C5A87D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC830809135F4EA200C5A87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC83080A135F4EA200C5A87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC83080C135F4EA200C5A87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Thor/Thor-Prefix.pch";
+				INFOPLIST_FILE = "Thor/Thor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC83080D135F4EA200C5A87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Thor/Thor-Prefix.pch";
+				INFOPLIST_FILE = "Thor/Thor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC8307E7135F4EA200C5A87D /* Build configuration list for PBXProject "Thor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC830809135F4EA200C5A87D /* Debug */,
+				DC83080A135F4EA200C5A87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC83080B135F4EA200C5A87D /* Build configuration list for PBXNativeTarget "Thor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC83080C135F4EA200C5A87D /* Debug */,
+				DC83080D135F4EA200C5A87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC8307E4135F4EA200C5A87D /* Project object */;
+}

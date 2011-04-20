@@ -1,0 +1,20 @@
+# -------------------------------------
+# osx and directories
+# -------------------------------------
+
+.DS_Store
+build/
+
+# -------------------------------------
+# xcode 3 user and workspace data
+# -------------------------------------
+
+*.mode1v3
+*.pbxuser
+
+# -------------------------------------
+# xcode 4 user and workspace data
+# -------------------------------------
+
+project.xcworkspace
+xcuserdata
