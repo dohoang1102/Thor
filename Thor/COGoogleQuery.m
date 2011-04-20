@@ -14,12 +14,12 @@
 - (id)init {
   self = [super init];
   if (self) {
-    m_webView = [[WebView alloc] initWithFrame:NSMakeRect(0, 0, 100, 100)
+    m_webView = [[WebView alloc] initWithFrame:NSZeroRect
                                      frameName:nil
                                      groupName:nil];
     
     [m_webView setFrameLoadDelegate:self];
-    [m_webView setShouldUpdateWhileOffscreen:YES];
+    [m_webView setShouldUpdateWhileOffscreen:NO];
     
     // Define a keyword blacklist for torrent links
     m_blacklist = [[NSArray alloc] initWithObjects:@"google", nil];
