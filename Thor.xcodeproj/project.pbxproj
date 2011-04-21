@@ -33,7 +33,7 @@
 		DC830804135F4EA200C5A87D /* ThorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThorAppDelegate.m; sourceTree = "<group>"; };
 		DC830807135F4EA200C5A87D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DC83080E135F4F4100C5A87D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		DC830810135F4F5C00C5A87D /* COGoogleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; path = COGoogleQuery.h; sourceTree = "<group>"; };
+		DC830810135F4F5C00C5A87D /* COGoogleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COGoogleQuery.h; sourceTree = "<group>"; };
 		DC830811135F4F5C00C5A87D /* COGoogleQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COGoogleQuery.m; sourceTree = "<group>"; };
 		DC830827135F5D7C00C5A87D /* COGoogleQueryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COGoogleQueryOperation.h; sourceTree = "<group>"; };
 		DC830828135F5D7C00C5A87D /* COGoogleQueryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COGoogleQueryOperation.m; sourceTree = "<group>"; };
@@ -297,6 +297,7 @@
 				DC83080D135F4EA200C5A87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

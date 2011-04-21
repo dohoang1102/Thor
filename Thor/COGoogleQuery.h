@@ -10,12 +10,20 @@
 #import <WebKit/WebKit.h>
 
 
+@class COGoogleQuery;
+
+typedef void (^COGoogleQueryCallback)(COGoogleQuery *query);
+
 @interface COGoogleQuery : NSObject {
 @private
-  WebView *m_webView;
-  NSArray *m_matchingPredicates;
+  WebView               *m_webView;
+  NSArray               *m_matchingPredicates;
+  NSArray               *m_results;
+  COGoogleQueryCallback m_callback;
 }
 
-- (void)query:(NSString *)query start:(NSUInteger)start;
+@property (nonatomic, retain, readonly) NSArray *results;
+
+- (void)query:(NSString *)query start:(NSUInteger)start callback:(COGoogleQueryCallback)callback;
 
 @end

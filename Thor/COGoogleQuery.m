@@ -9,7 +9,12 @@
 #import "COGoogleQuery.h"
 
 
+@interface COGoogleQuery ()
+@property (nonatomic, retain, readwrite) NSArray *results;
+@end
+
 @implementation COGoogleQuery
+@synthesize results;
 
 - (id)init {
   self = [super init];
@@ -33,10 +38,25 @@
 - (void)dealloc {
   [m_webView release];
   [m_matchingPredicates release];
+  self.results = nil;
+  if (m_callback) {
+    Block_release(m_callback);
+    m_callback = nil;
+  }
   [super dealloc];
 }
 
-- (void)query:(NSString *)query start:(NSUInteger)start {
+- (void)query:(NSString *)query start:(NSUInteger)start callback:(COGoogleQueryCallback)callback {
+  // Reset results
+  self.results = nil;
+  
+  // Store callback
+  if (m_callback) {
+    Block_release(m_callback);
+  }
+  m_callback = Block_copy(callback);
+  
+  // Build query
   NSMutableString *googleQuery = [NSMutableString stringWithString:@"http://www.google.com/search?q="];
   [googleQuery appendString:query];
   [googleQuery appendString:@"%2Bext%3Atorrent"];
@@ -70,7 +90,11 @@
     }
   }
   
-  NSLog(@"%@", torrentLinks);
+  self.results = [NSArray arrayWithArray:torrentLinks];
+  
+  if (m_callback) {
+    m_callback(self);
+  }
 }
 
 - (void)webView:(WebView *)sender didFailLoadWithError:(NSError *)error forFrame:(WebFrame *)frame {
