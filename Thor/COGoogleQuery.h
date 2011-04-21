@@ -13,9 +13,9 @@
 @interface COGoogleQuery : NSObject {
 @private
   WebView *m_webView;
-  NSArray *m_blacklist;
+  NSArray *m_matchingPredicates;
 }
 
-- (void)query:(NSString *)query;
+- (void)query:(NSString *)query start:(NSUInteger)start;
 
 @end

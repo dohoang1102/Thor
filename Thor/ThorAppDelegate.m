@@ -24,7 +24,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   // Insert code here to initialize your application
-  [[COGoogleQuery new] query:[self testQuery1]];
+  [[COGoogleQuery new] query:[self testQuery1] start:0];
+  [[COGoogleQuery new] query:[self testQuery1] start:10];
+  [[COGoogleQuery new] query:[self testQuery1] start:20];
 }
 
 @end

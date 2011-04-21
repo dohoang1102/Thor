@@ -21,26 +21,26 @@
     [m_webView setFrameLoadDelegate:self];
     [m_webView setShouldUpdateWhileOffscreen:NO];
     
-    // Define a keyword blacklist for torrent links
-    m_blacklist = [[NSArray alloc] initWithObjects:@"google", nil];
+    // Define a matching predicate list for torrent links
+    m_matchingPredicates = [[NSArray alloc] initWithObjects:
+                   [NSPredicate predicateWithFormat:@"not SELF contains[c] 'google'"],
+                   [NSPredicate predicateWithFormat:@"SELF endswith[c] '.torrent'"],
+                   nil];
   }
   return self;
 }
 
 - (void)dealloc {
   [m_webView release];
-  [m_blacklist release];
+  [m_matchingPredicates release];
   [super dealloc];
 }
 
-- (NSArray *)keywordBlacklist {
-  return [NSArray arrayWithObjects:@"google", nil];
-}
-
-- (void)query:(NSString *)query {
+- (void)query:(NSString *)query start:(NSUInteger)start {
   NSMutableString *googleQuery = [NSMutableString stringWithString:@"http://www.google.com/search?q="];
   [googleQuery appendString:query];
   [googleQuery appendString:@"%2Bext%3Atorrent"];
+  [googleQuery appendFormat:@"&start=%i", start];
   
   NSURL *url = [NSURL URLWithString:googleQuery];
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -58,14 +58,14 @@
   for (int i=0; i<anchors.length; i++) {
     DOMHTMLAnchorElement *anchor = (DOMHTMLAnchorElement *)[anchors item:i];
     NSString *href = [anchor href];
-    BOOL containsKeyword = NO;
-    for (NSString *keyword in m_blacklist) {
-      if ([href rangeOfString:keyword].location != NSNotFound) {
-        containsKeyword = YES;
+    BOOL doesNotMatch = NO;
+    for (NSPredicate *predicate in m_matchingPredicates) {
+      if (![predicate evaluateWithObject:href]) {
+        doesNotMatch = YES;
         break;
       }
     }
-    if (!containsKeyword) {
+    if (!doesNotMatch) {
       [torrentLinks addObject:href];
     }
   }
